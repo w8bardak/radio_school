@@ -31,10 +31,10 @@ html, body {
 }
 
 .rectangle-6_119 {
-  width: calc(100vw - 40px);
+  width: calc(100vw - 80px); /* уменьшаем ширину */
   height: calc(100vh - 150px);
   position: absolute;
-  left: 20px;
+  left: 60px; /* отодвигаем правее */
   top: 20px;
   border-radius: 25px;
   box-shadow: 0px 0px 7.1px -1px rgba(255, 255, 255, 0.25) inset;
@@ -80,14 +80,16 @@ html, body {
 }
 
 .rectangle-6_42 {
-  width: 78.75%;
+  width: calc(78.75% - 40px); /* уменьшаем ширину, чтобы при сдвиге не вылезало вправо */
   height: 100%;
   position: absolute;
-  left: 0;
+  left: 40px; /* сдвигаем вправо */
   top: 0;
   border-radius: 25px;
   background-color: rgba(164, 164, 164, 1);
 }
+
+
 
 .group-6_49 {
   width: calc(100% - 20px);
@@ -99,8 +101,25 @@ html, body {
   align-items: center;
   flex-direction: row-reverse;
 }
+.vector-6_37 {
+  width: 20px;
+  height: 20px;
+  background-image: url(./image/Vector_6_37.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 10px;
 
-.vector-6_30, .vector-6_34, .vector-6_37, .vector-6_46 {
+  /* убираем стандартные стили кнопки */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+}
+.vector-6_37:focus {
+  outline: none; /* убираем подсветку при фокусе */
+}
+.vector-6_30, .vector-6_34, .vector-6_46 {
   width: 20px;
   height: 20px;
   background-size: contain;
@@ -690,4 +709,13 @@ html, body {
     height: 22px;
     margin-top: 5px;
   }
+}
+.group-6_51 {
+  left: 100px; 
+  width: calc(100vw - 120px);
+}
+
+.group-9_6 {
+  left: 100px; 
+  width: calc(100vw - 160px);
 }
