@@ -98,10 +98,8 @@ html, body {
   top: 15px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  
 }
-
 .vector-6_37 {
   width: 20px;
   height: 20px;
@@ -116,13 +114,10 @@ html, body {
   cursor: pointer;
   padding: 0;
   outline: none;
-  order: 3;
 }
-
 .vector-6_37:focus {
   outline: none; /* убираем подсветку при фокусе */
 }
-
 .vector-6_30, .vector-6_34, .vector-6_46 {
   width: 20px;
   height: 20px;
@@ -134,29 +129,35 @@ html, body {
 .vector-6_30 {
   background-image: url(./image/Vector_6_30.png);
   margin-top: 6px;
-  order: 2;
+  margin-right: 48%;
 }
 
 .vector-6_34 {
   background-image: url(./image/Vector_6_34.png);
   margin-top: 6px;
-  order: 4;
+  margin-left: 0%;
+}
+
+.vector-6_37 {
+  background-image: url(./image/Vector_6_37.png);
 }
 
 .vector-6_46 {
   background-image: url(./image/Vector_6_46.png);
+  margin-right: auto;
+  margin-right: 1%;
   margin-top: 4px;
-  order: 1;
 }
 
 .text-6_44 {
   font-family: Verdana;
   font-weight: 700;
   color: rgba(0, 0, 0, 1);
+  margin-right: px;
+  margin-left: auto;
   flex-grow: 1;
-  text-align: center;
-  order: 5;
-  margin: 0 20px;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .span-6_44_1 {
@@ -177,11 +178,8 @@ html, body {
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin-bottom: 0px;
   background-image: url(./image/e6081924c9e88ca445ab91dbaf0321cd3160b15b.png);
-  order: 6;
-  margin-left: 10px;
 }
 
 .group-9_6 {
@@ -537,43 +535,16 @@ html, body {
   .group-6_49 {
     height: 60px;
     top: 10px;
-    flex-wrap: nowrap;
   }
   
   .rectangle-6_89 {
-    margin-left: 0;
+    margin-left: 1000px;
     width: 60px;
     height: 60px;
-    order: 6;
   }
   
   .vanja-container {
     flex-direction: row;
-  }
-  
-  .text-6_44 {
-    order: 5;
-    margin: 0 10px;
-  }
-  
-  .vector-6_46 {
-    order: 1;
-    margin-right: 10px;
-  }
-  
-  .vector-6_30 {
-    order: 2;
-    margin-right: 10px;
-  }
-  
-  .vector-6_37 {
-    order: 3;
-    margin: 0 10px;
-  }
-  
-  .vector-6_34 {
-    order: 4;
-    margin-left: 10px;
   }
 }
 
@@ -635,12 +606,11 @@ html, body {
     flex-wrap: wrap;
     height: auto;
     padding: 10px 0;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row-reverse;
   }
   
   .text-6_44 {
-    order: 5;
+    order: 1;
     width: 100%;
     margin-top: 10px;
     text-align: center;
@@ -649,28 +619,7 @@ html, body {
   }
   
   .vector-6_46 {
-    order: 1;
     margin-right: 10px;
-  }
-  
-  .vector-6_30 {
-    order: 2;
-    margin-right: 10px;
-  }
-  
-  .vector-6_37 {
-    order: 3;
-    margin: 0 10px;
-  }
-  
-  .vector-6_34 {
-    order: 4;
-    margin-left: 10px;
-  }
-  
-  .rectangle-6_89 {
-    order: 6;
-    margin-left: 10px;
   }
   
   .vanja-container {
@@ -780,3 +729,4 @@ html, body {
   left: 100px; 
   width: calc(100vw - 160px);
 }
+
