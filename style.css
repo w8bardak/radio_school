@@ -31,10 +31,10 @@ html, body {
 }
 
 .rectangle-6_119 {
-  width: calc(100vw - 70px); /* уменьшаем ширину */
+  width: calc(100vw - 180px); /* уменьшаем ширину */
   height: calc(100vh - 154px);
   position: absolute;
-  left: 60px; /* отодвигаем правее */
+  left: 158px; /* отодвигаем правее */
   top: 10px;
   border-radius: 25px;
   box-shadow: 0px 0px 7.1px -1px rgba(255, 255, 255, 0.25) inset;
@@ -42,13 +42,13 @@ html, body {
 }
 
 .vector-6_120 {
-  width: 30px;
-  height: 35px;
+  width: 43px;
+  height: 49px;
   background-image: url(./image/Vector_6_120.png);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  left: 20px;
+  left: 60px;
   top: 20px;
   z-index: 10;
 }
@@ -59,6 +59,7 @@ html, body {
   position: absolute;
   left: 20px;
   bottom: 20px;
+  right: 500px;
 }
 
 .group-6_48 {
@@ -180,6 +181,7 @@ html, body {
   background-image: url(./image/e6081924c9e88ca445ab91dbaf0321cd3160b15b.png);
   order: -1;
   margin-right: 10px;
+  
 }
 
 .group-9_6 {
@@ -188,13 +190,13 @@ html, body {
   left: 50px;
   bottom: 150px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 70px;
 }
 
 .group-6_77, .group-6_94, .group-6_105, .group-6_108, .group-6_112 {
-  width: calc(20% - 16px);
+  width: calc(20% - 50px); 
   min-width: 150px;
   position: relative;
   margin-bottom: 20px;
@@ -271,10 +273,10 @@ html, body {
 
 .group-9_7 {
   width: 20px;
-  height: 150px;
+  height: 220px;
   position: absolute;
-  left: 20px;
-  top: 50%;
+  left: 68px;
+  top: 20%;
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -407,12 +409,12 @@ html, body {
   }
   
   .rectangle-6_119 {
-    width: calc(100vw - 80px);
+    width: calc(100vw - 180px);
     height: calc(100vh - 150px);
   }
   
   .group-6_51 {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 50px);
   }
   
   .group-9_6 {
@@ -420,14 +422,19 @@ html, body {
   }
   
   .group-9_8 {
-    top: 20%;
+    top: 32%;
     width: min(500px, 45%);
   }
   
   .vanja-container {
     flex-direction: row;
   }
+  .group-6_77, .group-6_94, .group-6_105, .group-6_108, .group-6_112 {
+    width: calc(33.333% - 520px);
+    min-width: 80px;
+  }
 }
+
 
 /* Большие планшеты и маленькие десктопы */
 @media (max-width: 1200px) {
@@ -446,7 +453,7 @@ html, body {
   }
   
   .group-6_77, .group-6_94, .group-6_105, .group-6_108, .group-6_112 {
-    width: calc(33.333% - 15px);
+    width: calc(33.333% - 550px);
     min-width: 140px;
   }
   
@@ -499,7 +506,7 @@ html, body {
   }
   
   .group-6_77, .group-6_94, .group-6_105, .group-6_108, .group-6_112 {
-    width: calc(50% - 10px);
+    width: calc(50% - 150px);
     min-width: 140px;
   }
   
@@ -517,11 +524,11 @@ html, body {
     height: clamp(22px, 7vw, 35px);
   }
   
-.group-6_51 {
-  width: 100%; /* или нужная ширина */
+  .group-6_51 {
+  width: calc(100vw - 48px);
   height: 100px;
+  left: 160px; 
   position: absolute;
-  left: 60px; /* ставим тот же левый край, что и у rectangle-6_119 */
   bottom: 20px;
   box-sizing: border-box;
 }
@@ -716,8 +723,8 @@ html, body {
   }
 }
 .group-6_51 {
-  left: 15px; 
-  width: calc(100vw - 38px);
+  left: 160px; 
+  width: calc(100vw - 185px);
 }
 
 .group-9_6 {
