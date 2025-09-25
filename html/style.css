@@ -31,11 +31,11 @@ html, body {
 }
 
 .rectangle-6_119 {
-  width: calc(100vw - 80px); /* уменьшаем ширину */
-  height: calc(100vh - 150px);
+  width: calc(100vw - 70px); /* уменьшаем ширину */
+  height: calc(100vh - 154px);
   position: absolute;
   left: 60px; /* отодвигаем правее */
-  top: 20px;
+  top: 10px;
   border-radius: 25px;
   box-shadow: 0px 0px 7.1px -1px rgba(255, 255, 255, 0.25) inset;
   background-color: rgba(13, 13, 13, 1);
@@ -80,16 +80,14 @@ html, body {
 }
 
 .rectangle-6_42 {
-  width: calc(78.75% - 40px); /* уменьшаем ширину, чтобы при сдвиге не вылезало вправо */
+  width: 78.75%;
   height: 100%;
   position: absolute;
-  left: 40px; /* сдвигаем вправо */
+  left: 0;
   top: 0;
   border-radius: 25px;
   background-color: rgba(164, 164, 164, 1);
 }
-
-
 
 .group-6_49 {
   width: calc(100% - 20px);
@@ -129,10 +127,13 @@ html, body {
 
 .vector-6_30 {
   background-image: url(./image/Vector_6_30.png);
+  margin-top: 6px;
+  margin-right: 15px;
 }
 
 .vector-6_34 {
   background-image: url(./image/Vector_6_34.png);
+  margin-top: 6px;
 }
 
 .vector-6_37 {
@@ -142,7 +143,8 @@ html, body {
 .vector-6_46 {
   background-image: url(./image/Vector_6_46.png);
   margin-right: auto;
-  margin-left: 0;
+  margin-left: 15px;
+  margin-top: 4px;
 }
 
 .text-6_44 {
@@ -211,6 +213,7 @@ html, body {
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
   display: block;
+  margin-top: 2%;
 }
 
 .span-6_74_2, .span-6_95_4, .span-6_106_4, .span-6_109_2, .span-6_113_4 {
@@ -218,6 +221,7 @@ html, body {
   font-weight: 400;
   color: rgba(150, 150, 150, 1);
   display: block;
+  margin-top: 5px;
 }
 
 .rectangle-6_87, .rectangle-6_103, .rectangle-6_107, .rectangle-6_110, .rectangle-6_114 {
@@ -333,6 +337,8 @@ html, body {
   margin-right: clamp(15px, 3vw, 25px);
   order: 1;
   flex-shrink: 0;
+  margin-left: 40px;
+  margin-bottom: 15px;
 }
 
 .text-6_140 {
@@ -401,7 +407,7 @@ html, body {
   }
   
   .rectangle-6_119 {
-    width: calc(100vw - 40px);
+    width: calc(100vw - 80px);
     height: calc(100vh - 150px);
   }
   
@@ -511,11 +517,15 @@ html, body {
     height: clamp(22px, 7vw, 35px);
   }
   
-  .group-6_51 {
-    height: 90px;
-    left: 15px;
-    bottom: 15px;
-  }
+.group-6_51 {
+  width: 100%; /* или нужная ширина */
+  height: 100px;
+  position: absolute;
+  left: 60px; /* ставим тот же левый край, что и у rectangle-6_119 */
+  bottom: 20px;
+  box-sizing: border-box;
+}
+
   
   .group-6_49 {
     height: 60px;
@@ -605,11 +615,6 @@ html, body {
   
   .vector-6_46 {
     margin-right: 10px;
-  }
-  
-  .group-6_51 {
-    height: auto;
-    min-height: 80px;
   }
   
   .vanja-container {
@@ -711,8 +716,8 @@ html, body {
   }
 }
 .group-6_51 {
-  left: 100px; 
-  width: calc(100vw - 120px);
+  left: 15px; 
+  width: calc(100vw - 38px);
 }
 
 .group-9_6 {
